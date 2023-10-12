@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap");
+
+/*
+*  html5resetcss
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+nav {
+  /* width: 100%; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0 30px 30px;
+}
+.navbar {
+  max-width: 580px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 160px;
+}
+.nav__item a {
+  color: #050215;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.nav__item .active {
+  color: #b4977b;
+}
+.cart {
+  cursor: pointer;
+  margin-left: 30px;
+}
+aside {
+  width: 10%;
+  height: 100vh;
+  border-right: 2px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside_contianer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* margin-bottom: 100px; */
+}
+.logo {
+  color: #050215;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.next img {
+  cursor: pointer;
+}
+.controller {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  flex-direction: column;
+}
+#scroll {
+  width: 4px;
+  height: 30px;
+  background-color: #e5e5e5;
+}
+.dot {
+  width: 4px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out all;
+}
+.current {
+  color: #b4977b;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.total {
+  color: #e4d6c9;
+  font-size: 54px;
+  font-weight: 500;
+}
+.main__container {
+  overflow: hidden;
+  width: 90%;
+  height: 100vh;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease-in-out all;
+}
+.slide {
+  width: 80%;
+  height: 100vh;
+  padding: 0 150px;
+}
+.slide__contianer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 105px;
+  /* overflow: hidden; */
+}
+.img__cont img {
+  width: 517px;
+  height: 90vh;
+}
+.info {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+.title {
+  color: #050215;
+  font-size: 64px;
+  font-weight: 600;
+}
+.description {
+  color: rgba(5, 2, 21, 0.75);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 32.31px */
+  text-align: justify;
+}
+.btn {
+  display: inline;
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: #b4977b;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.number__indc {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Barlow;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #b4977b;
+}
